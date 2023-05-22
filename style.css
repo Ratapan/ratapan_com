@@ -1,6 +1,7 @@
 :root {
   --black: #664100;
   --back: rgb(245, 237, 220);
+  --padding-normal: 16px 0;
   --max-movil: 501px;
   --max-movil-plus: 601px;
   --max-tablet: 768px;
@@ -85,7 +86,7 @@ body {
 .logo {
   height: 8rem;
 }
-.img {
+.main__img {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -193,7 +194,36 @@ body {
 
 .flex{
   display: flex;
-  height: 100%;
-  justify-content: center;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
+  max-width: 1200px;
+  padding: 32px 0 0 0;
+}
+.slider{
+  display:flex;
+  width: 100%;
+  height: 500px;
+}
+.slider img{
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -ms-transition: .5s ease;
+  -o-transition: .5s ease;
+}
+.slider img:hover{
+  width: 50%;
+}
+.article{
+  width: 90%;
+}
+.article__head{
+  padding: var(--padding-normal);
+  text-align: center;
 }
