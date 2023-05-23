@@ -1,3 +1,4 @@
+
 const title = document.querySelector("#title");
 const imgBack = document.querySelector("#img-back");
 const imgCenter = document.querySelector("#img-center");
@@ -98,25 +99,6 @@ function noAuthorized() {
   notification.style.display = "none";
 }
 
-// sections
-// let section = 0;
-// const [...sections] = document.querySelectorAll(".section");
-// let sections_details = sections.map((sec) => {
-//   return {
-//     top: sec.offsetTop,
-//     id: sec,
-//   };
-// });
-// window.addEventListener(
-//   "resize",
-//   (event) => {
-//     console.log("resize");
-//     sections_details = sections.map((sec) => {
-//       return {
-//         top: sec.offsetTop,
-//         id: sec,
-//       };
-//     });
-//   },
-//   true
-// );
+console.log( markdown.toHTML( vsconfig ) );
+
+//fetch();
